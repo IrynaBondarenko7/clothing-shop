@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+# Clothing Shop - React App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This repository contains the source code for a small React application named "Clothing Shop." The app features clothing item cards with the ability to add items to a shopping cart and view the cart contents. Users can access the shopping cart by clicking the "Cart" button. The project utilizes React, Redux Toolkit, TypeScript, Css and Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+To run the application locally, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository: `git clone https://github.com/IrynaBondarenko7/clothing-shop.git`
+2. Navigate to the project directory: `cd clothing-shop`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
+5. Open your browser and visit `http://localhost:3000` to view the app.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **React:** The main JavaScript library used for building the user interface.
+- **Redux Toolkit:** State management for predictable and scalable state containers.
+- **TypeScript:** Adding static types for enhanced development and code quality.
+- **Vite:** A fast, opinionated web development build tool that serves as the project's bundler.
+- **Css:** Styles are written in Css, providing a more organized and maintainable stylesheet.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Features
+
+- **Clothing Item Cards:** Displaying various clothing items with details like name, price, and an "Add to Cart" button.
+- **Shopping Cart:** Users can add products to the cart and view the cart contents.
+- **Cart Preview:** Clicking the "Cart" button opens a dedicated page to view and manage the items in the shopping cart.
+
+## Folder Structure
+
+The project follows a structured organization:
+clothing-shop/
+|-- src/
+| |-- components/
+| |-- store/
+| |-- assets/
+| |-- App.tsx
+| |-- main.tsx
+| |-- index.css/
+|-- public/
+
+## Acknowledgments
+
+Thank you for your interest in Clothing Shop. We hope you enjoy using the application!
